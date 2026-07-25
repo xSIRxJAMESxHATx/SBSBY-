@@ -1,21 +1,20 @@
 # SBSBY!
 
-SBSBY! is a Cleveland sports hub built in Streamlit.
+SBSBY! is a clean Cleveland sports hub built with Streamlit.
 
-It includes:
+## Includes
 - Cleveland Browns
 - Cleveland Guardians
 - Cleveland Cavaliers
 - Ohio State Football
 - Ohio State Men's Basketball
 
-Features:
-- Scores and schedule links
-- News/article link extraction
-- Stats snapshots
-- Historical context
-- Prediction market links
-- Browns-themed UI
+## Features
+- Neutral site-wide design
+- Team-specific accent colors
+- Source fallback logic
+- Auto-refreshing live score section
+- News, stats, history, and market links
 
 ## Run locally
 
@@ -24,20 +23,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Deploy to Streamlit Community Cloud
+## Deploy to Streamlit Cloud
 
-1. Put `app.py`, `requirements.txt`, and `README.md` in a GitHub repository.
-2. Commit and push the files.
-3. Go to https://share.streamlit.io/
-4. Click **New app**.
-5. Choose your GitHub repo.
-6. Set the main file path to `app.py`.
-7. Click **Deploy**.
+1. Create a GitHub repository.
+2. Add `app.py`, `requirements.txt`, and `README.md`.
+3. Commit and push.
+4. Go to https://share.streamlit.io/
+5. Click **New app**.
+6. Select your repo.
+7. Set the main file path to `app.py`.
+8. Deploy.
 
 ## Notes
-
-You can later upgrade this app by adding:
-- live sports APIs
-- data tables from official feeds
-- better player trend charts
-- matchup prediction-market pages for each game
+This version avoids BeautifulSoup entirely, which helps prevent the `bs4` deployment error.
